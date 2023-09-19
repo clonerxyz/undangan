@@ -333,7 +333,7 @@ window.addEventListener('load', () => {
 
     if (name.length == 0) {
         document.getElementById('namatamu').remove();
-    } elseif {
+    } else if {
         let div = document.createElement('div');
         div.classList.add('m-2');
         div.innerHTML = `
