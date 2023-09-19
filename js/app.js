@@ -332,7 +332,7 @@ window.addEventListener('load', () => {
     let name = (new URLSearchParams(window.location.search)).get('to') ?? '';
 
     if (name.length == 0) {
-        document.getElementById('namatamu').remove();
+        document.getElementById('undangan').contentWindow.document.getElementById('namatamu').remove();
     } else {
         let div = document.createElement('div');
         div.classList.add('m-2');
@@ -341,8 +341,8 @@ window.addEventListener('load', () => {
         <h2 class="text-light">${escapeHtml(name)}</h2>
         `;
 
-        document.getElementById('formnama').value = name;
-        document.getElementById('namatamu').appendChild(div);
+        document.getElementById('undangan').contentWindow.document.getElementById('formnama').value = name;
+        document.getElementById('undangan').contentWindow.document.getElementById('namatamu').appendChild(div);
     }
 
     modal.show();
