@@ -329,11 +329,12 @@ const modalFoto = (img) => {
 
 window.addEventListener('load', () => {
     let modal = new bootstrap.Modal('#exampleModal');
+	let ano = document.getElementById('undangan');
     let name = (new URLSearchParams(window.location.search)).get('to') ?? '';
 
     if (name.length == 0) {
         document.getElementById('namatamu').remove();
-    } else if {
+    } else if (ano == 0) {
         let div = document.createElement('div');
         div.classList.add('m-2');
         div.innerHTML = `
