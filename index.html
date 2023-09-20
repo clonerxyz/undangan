@@ -278,7 +278,9 @@
                 <div class="rounded-4 mt-4 mb-2">
                     <div id="daftarucapan"><iframe id="iFrame" name="iframe" src="https://api.saranamakmurmandiri.com/data.html" style="border:none;height:100vh;width:100%;" allow="clipboard-read; clipboard-write" ></iframe></div>
                 </div>
-				
+			<script>
+				document.getElementById("iFrame").src = "https://api.saranamakmurmandiri.com/data.html?ver" + new Date().valueOf();
+			  </script>	
                 
             </div>
         </section>
